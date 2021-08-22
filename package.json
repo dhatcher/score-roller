@@ -21,7 +21,8 @@
     "svelte": "^3.0.0"
   },
   "dependencies": {
-    "sirv-cli": "^1.0.0",
-    "@esri/calcite-components": "1.0.0-beta.61"
+    "@esri/calcite-components": "1.0.0-beta.61",
+    "gh-pages": "^3.2.3",
+    "sirv-cli": "^1.0.0"
   }
 }
