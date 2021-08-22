@@ -1,0 +1,1 @@
+var CSS={menu:"menu",defaultTrigger:"default-trigger"};var SLOTS={tooltip:"tooltip",trigger:"trigger"};var ICONS={menu:"ellipsis"};export{CSS as C,ICONS as I,SLOTS as S};

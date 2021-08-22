@@ -1,0 +1,1 @@
+var clamp=function(a,t,c){return Math.max(t,Math.min(a,c))};export{clamp as c};
