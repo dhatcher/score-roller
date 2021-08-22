@@ -170,8 +170,9 @@
 <!--                            ticks="3" snap></calcite-slider>-->
 <!--        </calcite-label>-->
         <div style="width: 95%">
-            <calcite-label>Point Cost Range
-                <calcite-slider bind:this={minMaxCostSlider} on:calciteSliderChange={minMaxCostChange} min="0" min-label="Minimum Cost" min-value="0" max="90" max-label="Maximum Cost" max-value="90" step="1" label-handles
+            <calcite-label>
+                Point Cost Range
+                <calcite-slider bind:this={minMaxCostSlider} on:calciteSliderChange={minMaxCostChange} min="0" min-value="0" max="90" max-value="90" step="1" label-handles
                                 ticks="15" snap></calcite-slider>
             </calcite-label>
         </div>

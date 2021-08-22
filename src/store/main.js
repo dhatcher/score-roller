@@ -9,6 +9,7 @@ export const SettingPreset = {
 };
 
 export const statsStore = writable({numberOfSets:0, totalCost:0});
+export const notificationStore = writable(undefined);
 export const settingsStore = createSettingsStore();
 export const scoreStore = writable([
     {score:8, rolls:[], cost:0, bonus:-1},

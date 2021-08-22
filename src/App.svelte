@@ -1,10 +1,12 @@
 <script>
-	import {SvelteComponent} from "svelte";
+    import {SvelteComponent} from "svelte";
     import Settings from "./Settings.svelte";
     import Roller from "./Roller.svelte";
     import Stats from "./Stats.svelte";
+    import {notificationStore} from "./store/main";
 
-    const theme="calcite-theme-light";
+    const theme = "calcite-theme-light";
+    let notification = undefined;
 </script>
 
 <style>
@@ -15,6 +17,10 @@
     main {
         background: var(--calcite-ui-background);
         width: 100%;
+    }
+
+    calcite-alert {
+        --calcite-alert-width: 30em;
     }
 </style>
 
@@ -30,5 +36,15 @@
         <Settings/>
         <Roller/>
         <Stats/>
+        {#if $notificationStore}
+            <calcite-alert icon active dismissible scale="s" width="half" color="blue"
+                            on:calciteAlertClose={() => notificationStore.set(undefined)}>
+                <div slot="title">Unable to create Scores</div>
+                <div slot="message">We tried 1 million times but couldn't get a set of scores to match your settings. Change
+                    the settings and try again.
+                </div>
+            </calcite-alert>
+        {/if}
     </div>
+
 </main>

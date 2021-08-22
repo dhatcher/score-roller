@@ -1,5 +1,5 @@
 <script>
-    import {scoreStore, settingsStore, statsStore} from "./store/main";
+    import {notificationStore, scoreStore, settingsStore, statsStore} from "./store/main";
     import AbilityScore from "./AbilityScore.svelte";
 
 
@@ -25,6 +25,13 @@
                         numberOfSets: numberOfSetsRolled,
                         totalCost: costTotal
                     });
+                } else if (numberOfSetsRolled >= 1000000) {
+                    keepRolling = false;
+                    statsStore.set({
+                        numberOfSets: numberOfSetsRolled,
+                        totalCost: costTotal
+                    });
+                    notificationStore.set('failure');
                 }
             }
             return [...newScores];
@@ -86,5 +93,8 @@
     {#each $scoreStore as abilityScore, i (abilityScore)}
         <AbilityScore {abilityScore}/>
     {/each}
-    <calcite-button width="full" on:click={rollScores}>ROLL</calcite-button>
+    <div style="margin:2px;">
+        <calcite-button width="full" on:click={rollScores}>ROLL</calcite-button>
+    </div>
+
 </div>

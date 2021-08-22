@@ -39,6 +39,6 @@
 
 <div class="view">
     <div class="view-section" style="width:4em; font-weight: bold; font-size: large;">{abilityScore.score} ({abilityScore.bonus})</div>
-    <div class="view-section" style="width: 12em;">{diceBreakdown}</div>
-    <div class="view-section" style="width: 12em;">point buy cost <span style="padding-left: 4px;">{abilityScore.cost}</span></div>
+    <div class="view-section">{diceBreakdown}</div>
+    <div class="view-section">point buy cost <span style="padding-left: 4px;">{abilityScore.cost}</span></div>
 </div>
