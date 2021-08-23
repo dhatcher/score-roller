@@ -11,7 +11,8 @@
 
 <style>
     header {
-        background-image: linear-gradient(to bottom, var(--calcite-ui-background), var(--calcite-ui-foreground-3));
+        background-image: linear-gradient(to bottom, var(--calcite-ui-brand), var(--calcite-ui-brand-press));
+        color: var(--calcite-ui-text-inverse);
     }
 
     main {
