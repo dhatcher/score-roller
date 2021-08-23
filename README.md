@@ -1,5 +1,7 @@
 # 5e Ability Score Roller
 
+[Score Roller](https://dhatcher.github.io/score-roller/) - Give it a try
+
 5e Ability Score Roller is an ability score roller for Dungeons and Dragons ( D&D DnD etc. ) 5e. It generates 6 ability scores. By default, each 
 ability score is created by rolling four six sided (d6) dice and dropping the lowest value. You may change this to 
 roll only 3d6 in settings.
