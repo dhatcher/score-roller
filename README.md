@@ -15,6 +15,8 @@ range. If, for instance, you wanted only scores that cost the standard 27 points
 maximum to 27 and then all sets generated would be of that cost.
 
 
+## Running Locally
+
 *Note that you will need to have [Node.js](https://nodejs.org) installed.*
 
 
