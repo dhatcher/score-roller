@@ -26,7 +26,7 @@
 
 <header class="{theme}">
     <div style="text-align: center; justify-content: center;">
-        <h3>Score Roller</h3>
+        <h3>5e Ability Score Roller</h3>
     </div>
 
 </header>

@@ -1,17 +1,18 @@
-*Looking for a shareable component template? Go here --> [sveltejs/component-template](https://github.com/sveltejs/component-template)*
+#5e Ability Score Roller
+5e Ability Score Roller is an ability score roller for Dungeons and Dragons ( D&D DnD etc. ) 5e. It generates 6 ability scores. By default, each 
+ability score is created by rolling four six sided (d6) dice and dropping the lowest value. You may change this to 
+roll only 3d6 in settings.
 
----
+Each time you roll the Point Buy cost will be displayed for each ability score and a total will be displayed towards the
+bottom of the screen. Scores of 8 or lower have a zero cost, 9-13 have a 1 point cost and scores of 14 or higher 
+have a cost of 2. You can change the cost of low and high scores in settings, making scores below 8 have a negative cost
+and/or causing scores above 15 to only cost one point.
 
-# svelte app
+### Point Buy Range
+If you want sets of scores within a certain Point Buy range you can use the **Point Cost Range** slider to set a given
+range. If, for instance, you wanted only scores that cost the standard 27 points, you could set both the minimum and 
+maximum to 27 and then all sets generated would be of that cost.
 
-This is a project template for [Svelte](https://svelte.dev) apps. It lives at https://github.com/sveltejs/template.
-
-To create a new project based on this template using [degit](https://github.com/Rich-Harris/degit):
-
-```bash
-npx degit sveltejs/template svelte-app
-cd svelte-app
-```
 
 *Note that you will need to have [Node.js](https://nodejs.org) installed.*
 
@@ -47,59 +48,3 @@ npm run build
 
 You can run the newly built app with `npm run start`. This uses [sirv](https://github.com/lukeed/sirv), which is included in your package.json's `dependencies` so that the app will work when you deploy to platforms like [Heroku](https://heroku.com).
 
-
-## Single-page app mode
-
-By default, sirv will only respond to requests that match files in `public`. This is to maximise compatibility with static fileservers, allowing you to deploy your app anywhere.
-
-If you're building a single-page app (SPA) with multiple routes, sirv needs to be able to respond to requests for *any* path. You can make it so by editing the `"start"` command in package.json:
-
-```js
-"start": "sirv public --single"
-```
-
-## Using TypeScript
-
-This template comes with a script to set up a TypeScript development environment, you can run it immediately after cloning the template with:
-
-```bash
-node scripts/setupTypeScript.js
-```
-
-Or remove the script via:
-
-```bash
-rm scripts/setupTypeScript.js
-```
-
-## Deploying to the web
-
-### With [Vercel](https://vercel.com)
-
-Install `vercel` if you haven't already:
-
-```bash
-npm install -g vercel
-```
-
-Then, from within your project folder:
-
-```bash
-cd public
-vercel deploy --name my-project
-```
-
-### With [surge](https://surge.sh/)
-
-Install `surge` if you haven't already:
-
-```bash
-npm install -g surge
-```
-
-Then, from within your project folder:
-
-```bash
-npm run build
-surge public my-project.surge.sh
-```
