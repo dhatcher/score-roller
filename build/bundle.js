@@ -1781,9 +1781,9 @@ var app = (function () {
     			div1 = element("div");
     			div1.textContent = "We tried 1 million times but couldn't get a set of scores to match your settings. Change\n                    the settings and try again.";
     			attr_dev(div0, "slot", "title");
-    			add_location(div0, file, 41, 16, 1128);
+    			add_location(div0, file, 41, 16, 1139);
     			attr_dev(div1, "slot", "message");
-    			add_location(div1, file, 42, 16, 1192);
+    			add_location(div1, file, 42, 16, 1203);
     			set_custom_element_data(calcite_alert, "icon", "");
     			set_custom_element_data(calcite_alert, "active", "");
     			set_custom_element_data(calcite_alert, "dismissible", "");
@@ -1791,7 +1791,7 @@ var app = (function () {
     			set_custom_element_data(calcite_alert, "width", "half");
     			set_custom_element_data(calcite_alert, "color", "blue");
     			set_custom_element_data(calcite_alert, "class", "svelte-1qdki6i");
-    			add_location(calcite_alert, file, 39, 12, 946);
+    			add_location(calcite_alert, file, 39, 12, 957);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, calcite_alert, anchor);
@@ -1847,7 +1847,7 @@ var app = (function () {
     			header = element("header");
     			div0 = element("div");
     			h3 = element("h3");
-    			h3.textContent = "Score Roller";
+    			h3.textContent = "5e Ability Score Roller";
     			t1 = space();
     			main = element("main");
     			div1 = element("div");
@@ -1866,9 +1866,9 @@ var app = (function () {
     			add_location(header, file, 26, 0, 626);
     			set_style(div1, "display", "flex");
     			set_style(div1, "flex-direction", "column");
-    			add_location(div1, file, 34, 4, 794);
+    			add_location(div1, file, 34, 4, 805);
     			attr_dev(main, "class", "" + (null_to_empty(theme) + " svelte-1qdki6i"));
-    			add_location(main, file, 33, 0, 767);
+    			add_location(main, file, 33, 0, 778);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
